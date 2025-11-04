@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import ContactSection from "@/components/sections/ContactSection";
 import HistorySection from "@/components/sections/HistorySection";
 import ProfileSection from "@/components/sections/ProfileSection"
@@ -12,6 +13,7 @@ export default function AboutPage() {
       <WorksSection />
       <ContactSection />
       <HistorySection />
+      <Footer />
     </>
   );
 }

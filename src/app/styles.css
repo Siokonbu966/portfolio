@@ -83,3 +83,14 @@ th, td {
   border: solid 1px #f0f0f0;
   padding: 0.5rem;
 }
+
+/* --------------------
+          フッター
+-------------------- */
+
+footer {
+  text-align: center;
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: dashed 2px var(--theme-color);
+}
