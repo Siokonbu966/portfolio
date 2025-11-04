@@ -3,9 +3,8 @@
 -------------------- */
 
 :root {
-  --theme-color: #00a0a0;
   --bg-primary: #191970;
-  --bg-secondary: #fffafa;
+  --bg-secondary: #f0f8ff;
   --text-primary: #dfdfdf;
   --text-secondary: #1f1f1f;
 }
@@ -20,20 +19,28 @@ html, body {
 }
 
 body {
-  margin: 0;
+  margin: 0 auto;
   padding: 30px;
-  color: #333;
   color: var(--text-primary);
   background-color: var(--bg-primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+.sections {
+  margin: auto;
+  padding: auto;
+  max-width: 60rem;
+  width: 100%;
+}
 /* --------------------
         見出し
 -------------------- */
 
 h1, h2, h3 {
-  color: var(--theme-color);
-  border-bottom: dashed 0.1em var(--theme-color);
+  color: var(--text-primary);
+  border-bottom: dashed 0.1em var(--text-primary);
 }
 
 /* --------------------
@@ -41,7 +48,7 @@ h1, h2, h3 {
 -------------------- */
 
 a {
-  color: var(--theme-color);
+  color: #f4a460;
   text-decoration: none;
 }
 
@@ -62,7 +69,7 @@ ul {
 }
 li:before {
   content: "★";
-  color: var(--theme-color);
+  color: var(--text-primary);
 }
 
 /* --------------------
@@ -72,7 +79,7 @@ li:before {
 table {
   border-spacing: 0;
   border-collapse: collapse;
-  border: solid 1px #f0f0f0;
+  border: solid 1px var(--text-secondary);
   min-width: 70%;
   color: var(--text-secondary);
 }
@@ -83,11 +90,11 @@ tr:nth-child(2n) {
   background-color: var(--bg-secondary);
 }
 th {
-  background: var(--theme-color);
-  color: var(--text-primary);
+  background: var(--bg-secondary);
+  color: var(--text-secondary);
 }
 th, td {
-  border: solid 1px #f0f0f0;
+  border: solid 1px var(--text-secondary);
   padding: 0.5rem;
 }
 
@@ -100,5 +107,6 @@ footer {
   margin-top: 3rem;
   padding-top: 2rem;
   margin-bottom: 3rem;
-  border-top: dashed 2px var(--theme-color);
+  border-top: dashed 2px var(--text-primary);
+  width: 100%;
 }

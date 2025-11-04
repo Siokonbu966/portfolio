@@ -8,11 +8,15 @@ import WorksSection from "@/components/sections/WorksSection";
 export default function AboutPage() {
   return (
     <>
-      <ProfileSection />
-      <SkillsSection />
-      <WorksSection />
-      <ContactSection />
-      <HistorySection />
+      <body>
+        <div className="sections">
+          <ProfileSection />
+          <SkillsSection />
+          <WorksSection />
+          <ContactSection />
+          <HistorySection />
+        </div>
+      </body>
       <Footer />
     </>
   );
