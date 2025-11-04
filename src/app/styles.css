@@ -4,6 +4,10 @@
 
 :root {
   --theme-color: #00a0a0;
+  --bg-primary: #191970;
+  --bg-secondary: #fffafa;
+  --text-primary: #dfdfdf;
+  --text-secondary: #1f1f1f;
 }
 
 * {
@@ -19,6 +23,8 @@ body {
   margin: 0;
   padding: 30px;
   color: #333;
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
 }
 
 /* --------------------
@@ -68,16 +74,17 @@ table {
   border-collapse: collapse;
   border: solid 1px #f0f0f0;
   min-width: 70%;
+  color: var(--text-secondary);
 }
 tr {
-  background-color: #fff;
+  background-color: var(--bg-secondary);
 }
 tr:nth-child(2n) {
-  background-color: #f9f9f9;
+  background-color: var(--bg-secondary);
 }
 th {
   background: var(--theme-color);
-  color: #fff;
+  color: var(--text-primary);
 }
 th, td {
   border: solid 1px #f0f0f0;
@@ -92,5 +99,6 @@ footer {
   text-align: center;
   margin-top: 3rem;
   padding-top: 2rem;
+  margin-bottom: 3rem;
   border-top: dashed 2px var(--theme-color);
 }
